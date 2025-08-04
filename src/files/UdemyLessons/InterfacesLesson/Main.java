@@ -3,11 +3,14 @@ package files.UdemyLessons.InterfacesLesson;
 public class Main {
     // One interface can extend another.
     interface A {
+        @SuppressWarnings("unused")
         void meth1();
+        @SuppressWarnings("unused")
         void meth2();
     }
     // B now includes meth1() and meth2() – it adds meth3().
     interface B extends A {
+        @SuppressWarnings("unused")
         void meth3();
     }
     // This class must implement all of A and B
@@ -23,6 +26,8 @@ public class Main {
             System.out.println("Implement meth3().");
         }
     }
+
+    public static void main(String[] ignoredArgs) {
         MyClass ob = new MyClass();
         ob.meth1();
         ob.meth2();
