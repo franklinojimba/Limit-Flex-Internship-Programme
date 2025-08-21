@@ -1,0 +1,7 @@
+package files.WeekendAlgorithm.OOPAlgorithm.LambdaPractice;
+
+public interface DefInterface {
+    default int modify(int a, int b) {
+        return a % b;
+    }
+}
