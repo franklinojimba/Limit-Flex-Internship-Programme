@@ -1,4 +1,4 @@
-package files.WeekendAlgorithm.OOPAlgorithm.LambdaPractice;
+package files.WeekendAlgorithmChallenge.LambdaPractice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,11 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class StringSorter implements DefInterface {
-    @SuppressWarnings("unused")
+    public List<String> print(List<String> list){
+        System.out.println(list);
+        return list;
+    }
+
     public static void main(String[] args) {
         List<String> list = new ArrayList<>(List.of("Berries","Watermelon","Apples"));
         list.sort(String::compareTo);
@@ -51,6 +55,9 @@ public class StringSorter implements DefInterface {
         List<String> names = new ArrayList<>(Arrays.asList("ring", "dye", "red"));
         List<String> toUpper = names.stream().map(String::toUpperCase).toList();
         System.out.println(toUpper);
+        names.forEach(System.out::println);
+
+
 
     }
 }

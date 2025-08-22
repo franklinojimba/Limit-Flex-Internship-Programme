@@ -1,4 +1,4 @@
-package files.WeekendAlgorithm.OOPAlgorithm.LambdaPractice;
+package files.WeekendAlgorithmChallenge.LambdaPractice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ class Person{
     }
 }
 public class ConstructorReference {
-    @SuppressWarnings("unused")
+
     public static void main(String[] args) {
         List<String> names = new ArrayList<>(Arrays.asList("Megan", "Alexander", "Bob"));
         List<Person> person = names.stream().map(Person::new).toList();
